@@ -12,4 +12,11 @@ class CalculatorTest < Minitest::Test
 
     assert_equal 4, calc.add(2, 2)
   end
+
+  def test_it_can_substract_two_numbers
+    calc = Calculator.new
+
+    assert_equal 7, calc.subtract(10, 3)
+    assert_equal 13, calc.subtract(10, -3)
+  end
 end

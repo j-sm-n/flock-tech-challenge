@@ -6,4 +6,10 @@ class CalculatorTest < Minitest::Test
 
     assert_instance_of Calculator, calc
   end
+
+  def test_it_can_add_two_numbers
+    calc = Calculator.new
+
+    assert_equal 4, calc.add(2, 2)
+  end
 end

@@ -25,4 +25,11 @@ class CalculatorTest < Minitest::Test
 
     assert_equal 20, calc.multiply(2,10)
   end
+
+  def test_it_can_divide_two_numbers
+    calc = Calculator.new
+
+    assert_equal 2, calc.divide(20,10)
+    assert_equal nil, calc.divide(nil,10)
+  end
 end

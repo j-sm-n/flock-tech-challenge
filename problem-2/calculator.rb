@@ -10,4 +10,12 @@ class Calculator
   def multiply(x, y)
     x * y
   end
+
+  def divide(x, y)
+    if x == nil
+      nil
+    else
+      x / y
+    end
+  end
 end

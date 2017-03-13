@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flock ToDo</title>
-    
+    <title>Flock Todo</title>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
+    <h1>Flock Todos</h1>
+
+    <div class="well">
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label>Topic</label>
+          <textarea class="form-control" rows="2" placeholder="Topic #1, Topic #2"></textarea>
+          <span id="helpBlock" class="help-block">Seperate multiple topics by commas.</span>
+        </div>
+        <div class="form-group">
+          <label>Due Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="true">Completed
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default btn-lg">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
